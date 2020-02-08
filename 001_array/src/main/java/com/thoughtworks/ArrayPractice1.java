@@ -11,6 +11,13 @@ public class ArrayPractice1 {
      */
     public static void printArrayReverse() {
         int[] array = new int[]{1, 2, 3};
-
+        System.out.print("[");
+        for (int index = array.length - 1; index >= 0; index--) {
+            System.out.print(array[index]);
+            if (index > 0) {
+                System.out.print(",");
+            }
+        }
+        System.out.print("]");
     }
 }
